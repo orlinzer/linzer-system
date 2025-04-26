@@ -1,0 +1,12 @@
+[package]
+name = "linzer-system"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = "3.0"
+dotenv = "0.15.0"
+
+[features]
+default = []
+production = []
