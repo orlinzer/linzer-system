@@ -1,11 +1,18 @@
+pub mod broker {
+    pub mod broker_controller;
+    pub mod broker_manager;
+}
+pub mod connection {
+    pub mod connection_manager;
+}
 mod config;
-mod connection;
-pub mod controller;
-mod listener;
-mod manager;
+pub mod listener {
+    pub mod listener;
+}
+pub mod interfaces {
+    pub mod cli;
+}
+pub mod message {
+    pub mod message;
+}
 mod threaded;
-
-use connection::*;
-pub use controller::*;
-use listener::*;
-use manager::*;
